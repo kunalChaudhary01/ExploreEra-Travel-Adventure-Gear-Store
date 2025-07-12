@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExploreEra – Adventure Shop</title>
+  <link rel="stylesheet" href="style1.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+</head>
+<body>
+  <header>
+    <h1>ExploreEra</h1>
+    <div class="controls">
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="bags">Bags</button>
+        <button data-filter="shoes">Shoes</button>
+        <button data-filter="gear">Gear</button>
+        <button data-filter="tents">Tents</button>
+      </div>
+      <div class="right">
+        <button id="mode-toggle">🌙</button>
+        <div class="cart-counter" id="cart-counter">
+          <span id="cart-count">0</span><i> 🛒 </i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Multiple products -->
+      <div class="swiper-slide product-card" data-category="bags" data-name="Adventure Bag" data-price="59.99">
+        <img src="https://greenstyle.com/cdn/shop/products/315653792_1349638595440132_6922846256263110273_n-synthialGerritson.png?v=1669739455&width=1920" alt="Bag"/>
+        <h3>Adventure Bag</h3><div class="price">$59.99</div><div class="stars">⭐⭐⭐⭐☆</div><button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="swiper-slide product-card" data-category="shoes" data-name="Hiking Boots" data-price="79.99">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI6pIhMaDrz8KW17cEXLj_xCOzIE6JeKOJzg&s" alt="Boots"/>
+        <h3>Hiking Boots</h3><div class="price">$79.99</div><div class="stars">⭐⭐⭐⭐⭐</div><button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="swiper-slide product-card" data-category="gear" data-name="Trekking Pole" data-price="19.99">
+        <img src="https://imgs.search.brave.com/tfRueeObOqU3Ar2wLYOcabq0vzM2xyzGcXfGiSFizK8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iZXR0/ZXJ0cmFpbC5jb20v/aW1hZ2UvZHVyc3Rv/bi1pY2VsaW5lLXRy/ZWtraW5nLXBvbGUt/cGFja2VkLXNpemU_/aGFzaD0vNGY4Yjkz/OTg4MGYwNDJlYjli/MmRkZmEwOWEzNjFj/ZjAvOWE4MjQ3MzQx/NTYxNDA0N2FjNjU4/MzhjYmI3ZDVmNDUm/d2lkdGg9MTkyMCZx/dWFsaXR5PTgwJmZv/cm1hdD1hdXRvJmZp/dD1zY2FsZS1kb3du" alt="Pole"/>
+        <h3>Trekking Pole</h3><div class="price">$19.99</div><div class="stars">⭐⭐⭐⭐☆</div><button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="swiper-slide product-card" data-category="tents" data-name="Camping Tent" data-price="129.99">
+        <img src="https://imgs.search.brave.com/_hvpU-Z9GDr75Qyne1ad-Iqp_kCczx4_SJOGcNI2WoI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dGhld2lyZWN1dHRl/ci5jb20vd3AtY29u/dGVudC9tZWRpYS8y/MDIyLzA3L2NhcmZh/bWlseWNhbXBpbmd0/ZW50cy0yMDQ4cHgt/MDMxMy0zeDItMS5q/cGc_YXV0bz13ZWJw/JnF1YWxpdHk9NzUm/d2lkdGg9MTAyNA" alt="Tent"/>
+        <h3>Camping Tent</h3><div class="price">$129.99</div><div class="stars">⭐⭐⭐⭐⭐</div><button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="swiper-slide product-card" data-category="gear" data-name="Camping Lamp" data-price="25.99">
+        <img src="https://imgs.search.brave.com/JSRCIXKoRvNfaBIGiQxGO50c7vFaGFlqgc_Qvt74_Bw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI3/MzI2NjY5Mi9waG90/by9hLW9sZC1ydXN0/aWMtb2lsLWxhbnRl/cm4tb24tYS13b29k/LWJsb2NrLWF0LWEt/Y2FtcGluZy1zaXRl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz01clZldVFBWWhx/bmJaVS1UWGRTM0R2/LXRfbmJadmhRbjJ3/V1Z2cVFDcE1VPQ" alt="Lamp"/>
+        <h3>Camping Lamp</h3><div class="price">$25.99</div><div class="stars">⭐⭐⭐⭐☆</div><button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="swiper-slide product-card" data-category="shoes" data-name="Trail Shoes" data-price="49.99">
+        <img src="https://s3.amazonaws.com/www.irunfar.com/wp-content/uploads/2024/07/25053122/Best-Trail-Running-Shoes-Hoka-Speedgoat-6.jpg" alt="Trail Shoes"/>
+        <h3>Trail Shoes</h3><div class="price">$49.99</div><div class="stars">⭐⭐⭐☆☆</div><button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="swiper-slide product-card" data-category="bags" data-name="Duffel Bag" data-price="39.99">
+        <img src="https://m.media-amazon.com/images/I/71JV+Go-mML._AC_SY300_SX300_.jpg" alt="Duffel Bag"/>
+        <h3>Duffel Bag</h3><div class="price">$39.99</div><div class="stars">⭐⭐⭐⭐☆</div><button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="swiper-slide product-card" data-category="gear" data-name="Sleeping Bag" data-price="45.99">
+        <img src="https://as2.ftcdn.net/v2/jpg/11/28/43/35/1000_F_1128433503_gsHVHJo0FQT5JcifoWVAuXkYomCmWfPt.webp" alt="Sleeping Bag"/>
+        <h3>Sleeping Bag</h3><div class="price">$45.99</div><div class="stars">⭐⭐⭐☆☆</div><button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div class="modal" id="cart-modal">
+    <div class="modal-content">
+      <h2>Your Cart</h2>
+      <ul id="cart-list"></ul>
+      <div class="modal-footer">
+        <div>Total: $<span id="cart-total">0.00</span></div>
+        <button id="checkout-btn">Checkout</button>
+        <button class="close-btn" id="close-cart">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay and Checkout Popup -->
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="checkout-popup">
+    <div class="popup-content">
+      <h2>Checkout</h2>
+      <p>Total Amount: $<span id="checkout-total">0.00</span></p>
+      <form id="checkout-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required/>
+        <button type="submit">Confirm</button>
+      </form>
+      <button class="close-btn" id="close-checkout">Close</button>
+    </div>
+  </div>
+
+  <footer><p>© 2025 ShopEase. All rights reserved.</p></footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script1.js"></script>
+</body>
+</html>
